@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "titulo": "La Divina Comedia",
+        "autor": "Dante Alighieri",
+        "resumen": "La Divina Comedia sigue el camino desde el centro de la Tierra, donde se halla Lucifer, hasta el dominio de Dios.",
+        "unidades": 7
+    },
+    {
+        "id": 2,
+        "titulo": "Cien A\u00f1os de Soledad",
+        "autor": "Gabriel Garc\u00eda M\u00e1rquez",
+        "resumen": "La historia de la familia Buend\u00eda a lo largo de siete generaciones en el m\u00edtico pueblo de Macondo.",
+        "unidades": "5"
+    },
+    {
+        "id": 3,
+        "titulo": "Don Quijote de la Mancha",
+        "autor": "Miguel de Cervantes",
+        "resumen": "Las aventuras de un caballero que confunde la realidad con su imaginaci\u00f3n, acompa\u00f1ado por su fiel escudero Sancho Panza.",
+        "unidades": "3"
+    },
+    {
+        "id": 4,
+        "titulo": "1984",
+        "autor": "George Orwell",
+        "resumen": "Una distop\u00eda sobre un r\u00e9gimen totalitario que vigila y controla cada aspecto de la vida humana.",
+        "unidades": "4"
+    },
+    {
+        "id": 5,
+        "titulo": "El Principito",
+        "autor": "Antoine de Saint-Exup\u00e9ry",
+        "resumen": "La historia de un joven pr\u00edncipe que explora diferentes planetas, incluyendo la Tierra, buscando comprender las emociones humanas.",
+        "unidades": "6"
+    },
+    {
+        "id": 6,
+        "titulo": "Matar a un Ruise\u00f1or",
+        "autor": "Harper Lee",
+        "resumen": "Un relato conmovedor sobre la injusticia racial y la p\u00e9rdida de la inocencia en el sur de los Estados Unidos.",
+        "unidades": "3"
+    },
+    {
+        "id": 7,
+        "titulo": "El Jard\u00edn de los Secretos",
+        "autor": "Isabel Fern\u00e1ndez",
+        "resumen": "Una novela que explora los misterios ocultos de una mansi\u00f3n abandonada, donde una joven descubre secretos familiares que cambiar\u00e1n su vida para siempre.",
+        "unidades": "4"
+    },
+    {
+        "id": 9,
+        "titulo": "El Jard\u00edn de los Secretos",
+        "autor": "Isabel Fern\u00e1ndez",
+        "resumen": "Una novela que explora los misterios ocultos de una mansi\u00f3n abandonada, donde una joven descubre secretos familiares que cambiar\u00e1n su vida para siempre.",
+        "unidades": "4"
+    },
+    {
+        "id": 10,
+        "titulo": "El Jard\u00edn de los Secretos",
+        "autor": "Isabel Fern\u00e1ndez",
+        "resumen": "Una novela que explora los misterios ocultos de una mansi\u00f3n abandonada, donde una joven descubre secretos familiares que cambiar\u00e1n su vida para siempre.",
+        "unidades": "4"
+    }
+]

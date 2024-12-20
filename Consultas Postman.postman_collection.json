@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "58546a46-7891-4717-8e45-d451e692ca57",
+		"name": "Consultas Postman",
+		"description": "{  \n\"info\": {  \n\"_postman_id\": \"003ec08b-6490-4240-ae6e-81679ccd9e6d\",  \n\"name\": \"📄 Guía de Consultas HTTP - DWES 03\",  \n\"description\": \"En este archivo de ejemplo encontrarás las consultas HTTP básicas necesarias para completar la Tarea Evaluativa 2 de la Unidad Didáctica 3 de DWES. El ejemplo está basado en una aplicación de **Blog Personal**, en la que podrás realizar operaciones CRUD sobre las publicaciones o posts de un blog.\\\\n\\\\n🔍 **¿Qué puedes hacer con este ejemplo?** \\\\nCon esta colección, podrás ejecutar las operaciones básicas de un sistema REST para gestionar posts en un blog. Entre las operaciones disponibles, encontrarás:\\\\n\\\\n1. **Recuperar la información de todos los posts**: Verás la lista completa de publicaciones en el blog.\\\\n \\\\n2. **Consultar un post específico por su ID**: Obtendrás los detalles de una publicación concreta.\\\\n \\\\n3. **Insertar un nuevo post**: Podrás añadir una nueva publicación al blog.\\\\n \\\\n4. **Modificar un post existente**: Actualiza el contenido o título de una publicación.\\\\n \\\\n5. **Eliminar un post**: Elimina un post del blog de forma definitiva.\\\\n \\\\n\\\\n🌟 **Estructura del Ejemplo** \\\\nCada operación de esta plantilla cuenta con instrucciones detalladas y ejemplos de cómo enviar y recibir los datos en formato JSON. Solo necesitas hacer clic en **Send** en cada solicitud para ejecutarla y ver los resultados en tiempo real.\\\\n\\\\n💡 **Consejo**: Usa el archivo para familiarizarte con las consultas que deberás implementar y personalizar en tu propio servicio en la tarea evaluativa. Cada solicitud incluye una descripción paso a paso para ayudarte a entender cómo funcionan las operaciones CRUD en una API RESTful.\",  \n\"schema\": \"[https://schema.getpostman.com/json/collection/v2.1.0/collection.json\"](https://schema.getpostman.com/json/collection/v2.1.0/collection.json),  \n\"_exporter_id\": \"27364521\"  \n},  \n\"item\": \\[  \n{  \n\"name\": \"Paso 1: Obtener todos los Posts\",  \n\"request\": {  \n\"method\": \"GET\",  \n\"header\": \\[\\],  \n\"url\": {  \n\"raw\": \"[http://ejemplo-blog-dwes/posts\"](http://ejemplo-blog-dwes/posts),  \n\"protocol\": \"http\",  \n\"host\": \\[  \n\"ejemplo-blog-dwes\"  \n\\],  \n\"path\": \\[  \n\"posts\"  \n\\]  \n},  \n\"description\": \"Esta solicitud GET obtiene una lista de todos los posts disponibles en el sistema del blog.\\\\n\\\\n**Caso de uso:** Al pulsar enviar debería devolver la información de todos los posts disponibles\"  \n},  \n\"response\": \\[\\]  \n},  \n{  \n\"name\": \"Paso 2: Obtener un Post por su ID\",  \n\"request\": {  \n\"method\": \"GET\",  \n\"header\": \\[\\],  \n\"url\": {  \n\"raw\": \"[http://ejemplo-blog-dwes/posts/{{id}}\"](http://ejemplo-blog-dwes/posts/{{id}}),  \n\"protocol\": \"http\",  \n\"host\": \\[  \n\"ejemplo-blog-dwes\"  \n\\],  \n\"path\": \\[  \n\"posts\",  \n\"{{id}}\"  \n\\]  \n},  \n\"description\": \"Esta solicitud GET obtendría un post específico basado en su ID.\\\\n\\\\n**Caso de uso:** Si se cambia el valor de `{{id}}` en la URL al ID del post que quieres consultar y debería devolver los detalles de ese post concreto.\"  \n},  \n\"response\": \\[\\]  \n},  \n{  \n\"name\": \"Paso 3: Crear un nuevo Post\",  \n\"request\": {  \n\"method\": \"POST\",  \n\"header\": \\[  \n{  \n\"key\": \"Content-Type\",  \n\"value\": \"application/json\"  \n}  \n\\],  \n\"body\": {  \n\"mode\": \"raw\",  \n\"raw\": \"{\\\\n \"title\": \"Título del nuevo post\",\\\\n \"content\": \"Contenido del nuevo post\"\\\\n}\",  \n\"options\": {  \n\"raw\": {  \n\"language\": \"json\"  \n}  \n}  \n},  \n\"url\": {  \n\"raw\": \"[http://ejemplo-blog-dwes/posts\"](http://ejemplo-blog-dwes/posts),  \n\"protocol\": \"http\",  \n\"host\": \\[  \n\"ejemplo-blog-dwes\"  \n\\],  \n\"path\": \\[  \n\"posts\"  \n\\]  \n},  \n\"description\": \"Esta solicitud POST crearía un nuevo post en el blog.\\\\n\\\\n**Caso de uso:** En este caso, en el cuerpo de la solicitud se recibiría un JSON con los campos `title` y `content` que contendrían el titulo y el contenido del post que se quiere guardar\"  \n},  \n\"response\": \\[\\]  \n},  \n{  \n\"name\": \"Paso 4: Actualizar un Post por su ID\",  \n\"request\": {  \n\"method\": \"PUT\",  \n\"header\": \\[  \n{  \n\"key\": \"Content-Type\",  \n\"value\": \"application/json\"  \n}  \n\\],  \n\"body\": {  \n\"mode\": \"raw\",  \n\"raw\": \"{\\\\n \"title\": \"Título actualizado\",\\\\n \"content\": \"Contenido actualizado del post\"\\\\n}\",  \n\"options\": {  \n\"raw\": {  \n\"language\": \"json\"  \n}  \n}  \n},  \n\"url\": {  \n\"raw\": \"[http://ejemplo-blog-dwes/posts/{{id}}\"](http://ejemplo-blog-dwes/posts/{{id}}),  \n\"protocol\": \"http\",  \n\"host\": \\[  \n\"ejemplo-blog-dwes\"  \n\\],  \n\"path\": \\[  \n\"posts\",  \n\"{{id}}\"  \n\\]  \n},  \n\"description\": \"Esta solicitud PUT actualiza un post existente en el blog basándose en su ID.\\\\n\\\\n**Caso de uso:** Si se cambia el valor de `{{id}}` al ID del post que quieres actualizar, editando `title` y `content` en el cuerpo de la solicitud con los valores nuevosse modificaría el contenido de ese post concreto\"  \n},  \n\"response\": \\[\\]  \n},  \n{  \n\"name\": \"Paso 5: Eliminar un Post por su ID\",  \n\"request\": {  \n\"method\": \"DELETE\",  \n\"header\": \\[\\],  \n\"url\": {  \n\"raw\": \"[http://ejemplo-blog-dwes/posts/{{id}}\"](http://ejemplo-blog-dwes/posts/{{id}}),  \n\"protocol\": \"http\",  \n\"host\": \\[  \n\"ejemplo-blog-dwes\"  \n\\],  \n\"path\": \\[  \n\"posts\",  \n\"{{id}}\"  \n\\]  \n},  \n\"description\": \"Esta solicitud DELETE elimina un post específico del blog por su ID.\\\\n\\\\n**Caso de uso:** Si se cambia el valor de `{{id}}` al ID del post que quieres eliminar, este se eliminaría al recibir y procesar la solicitud\"  \n},  \n\"response\": \\[\\]  \n}  \n\\],  \n\"variable\": \\[  \n{  \n\"key\": \"id\",  \n\"value\": \"1\"  \n}  \n\\]  \n}",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32930227"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/v1/public/libro/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"v1",
+						"public",
+						"libro",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/v1/public/libro/get/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"v1",
+						"public",
+						"libro",
+						"get",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"\",\r\n    \"titulo\": \"El Jardín de los Secretos\",\r\n    \"autor\": \"Isabel Fernández\",\r\n    \"resumen\": \"Una novela que explora los misterios ocultos de una mansión abandonada, donde una joven descubre secretos familiares que cambiarán su vida para siempre.\",\r\n    \"unidades\": \"4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/v1/public/libro/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"v1",
+						"public",
+						"libro",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"unidades\" : 7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/v1/public/libro/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"v1",
+						"public",
+						"libro",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/v1/public/libro/delete/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"v1",
+						"public",
+						"libro",
+						"delete",
+						"8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
